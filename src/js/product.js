@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderList(targetId, data) {
     const el = document.getElementById(targetId);
     if (!el) return;
-    el.innerHTML = "";
+    el.innerHTML = ""; 
     if (!data || (Array.isArray(data) && data.length === 0)) {
       const details = el.closest("details") || el.closest("#" + targetId);
       if (details) details.classList.add("hidden");
@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const arr = Array.isArray(data) ? data : [data];
     arr.forEach((entry) => {
-      let url = "",
-        label = "";
+      let url = "", label = "";
       if (typeof entry === "string") {
         url = label = entry;
       } else {
@@ -38,13 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
         label = entry.label || entry.title || entry.url;
       }
 
-      const li = document.createElement("li");
+     
       const a = document.createElement("a");
       a.href = url;
-      a.target = "_blank";
-      a.className = "underline hover:no-underline break-all";
-      a.textContent = label;
+      a.target = "_blank";  
+      a.className = "block hover:no-underline"; 
+
+      const li = document.createElement("li");
+      li.className = "py-2";
       li.appendChild(a);
+      a.textContent = label;
       el.appendChild(li);
     });
   }
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  // Render title và ảnh sản phẩm
   const titleEl = document.getElementById("prodTitle");
   if (titleEl) titleEl.textContent = `#${product.stt} ${product.title || ""}`;
 
@@ -76,37 +79,73 @@ document.addEventListener("DOMContentLoaded", () => {
       sourceLink.classList.add("hidden");
     }
   }
-
+  const linkbag = document.getElementById("linkbag");
+  if (linkbag) {
+    if (product.links?.bag) {
+      linkbag.href = product.links.bag;
+      linkbag.target = "_blank";
+    } else {
+      linkbag.classList.add("hidden");
+    }
+  }
+    const linkshose = document.getElementById("linkshose");
+  if (linkshose) {
+    if (product.links?.shoes) {
+      linkshose.href = product.links.shoes;
+      linkshose.target = "_blank";
+    } else {
+      linkshose.classList.add("hidden");
+    }
+  }
+      const linkpaint = document.getElementById("linkpaint");
+  if (linkpaint) {
+    if (product.links?.pants) {
+      linkpaint.href = product.links.pants;
+      linkpaint.target = "_blank";
+    } else {
+      linkpaint.classList.add("hidden");
+    }
+  }
+        const linkshirt = document.getElementById("linkshirt");
+  if (linkshirt) {
+    if (product.links?.shirt) {
+      linkshirt.href = product.links.shirt;
+      linkshirt.target = "_blank";
+    } else {
+      linkshirt.classList.add("hidden");
+    }
+  }
   renderList("listShirt", product.links?.shirt); 
   renderList("listPants", product.links?.pants); 
-  renderList("listScarf", product.links?.scarf); // khăn
-  renderList("listShoes", product.links?.shoes); // giày
+  renderList("listScarf", product.links?.scarf); 
+  renderList("listShoes", product.links?.shoes); 
+  renderList("listBag", product.links?.bag);
+  renderList("listSource", product.links?.source);
 
-  // Quần tham khảo (dạng grid thẻ <a>)
-  const gridAlt = document.getElementById("gridAltPants");
-  if (gridAlt) {
-    gridAlt.innerHTML = "";
-    const alt = product.links?.alt_pants || [];
-    (Array.isArray(alt) ? alt : []).forEach((entry) => {
-      let url = "",
-        label = "";
-      if (typeof entry === "string") {
-        url = label = entry;
-      } else {
-        url = entry.url;
-        label = entry.label || entry.title || entry.url;
-      }
+  // const gridAlt = document.getElementById("gridAltPants");
+  // if (gridAlt) {
+  //   gridAlt.innerHTML = ""; 
+  //   const alt = product.links?.alt_pants || [];
+  //   (Array.isArray(alt) ? alt : []).forEach((entry) => {
+  //     let url = "",
+  //       label = "";
+  //     if (typeof entry === "string") {
+  //       url = label = entry;
+  //     } else {
+  //       url = entry.url;
+  //       label = entry.label || entry.title || entry.url;
+  //     }
 
-      const a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.className =
-        "rounded-lg border border-neutral-200 p-3 hover:bg-neutral-50 break-all";
-      a.textContent = label;
-      gridAlt.appendChild(a);
-    });
-    if (!alt.length) gridAlt.closest("details").classList.add("hidden");
-  }
+  //     const a = document.createElement("a");
+  //     a.href = url;
+  //     a.target = "_blank";
+  //     a.className =
+  //       "rounded-lg border border-neutral-200 p-3 hover:bg-neutral-50 break-all";
+  //     a.textContent = label;
+  //     gridAlt.appendChild(a);
+  //   });
+  //   if (!alt.length) gridAlt.closest("details").classList.add("hidden");
+  // }
 
   // Render “Phối đồ tương tự” từ các item còn lại
   const simWrap = document.querySelector("section .grid");
@@ -131,6 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Xử lý sự kiện quay lại
   document.getElementById("btnBack")?.addEventListener("click", () => {
     if (history.length > 1) history.back();
     else location.href = "index.html";
