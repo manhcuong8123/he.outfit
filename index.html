@@ -25,7 +25,7 @@
     <!-- Sidebar cố định bên trái -->
     <div class="md:hidden lg:block">
       <aside
-        class="fixed lg:top-0 lg:left-0 lg:w-[3.5%] z-30 md:w-full md:bottom-0 md:left-0 md:right-0 lg:h-ffixed lg:top-0 lg:left-0 lg:w-[3.5%] lg:h-full md:w-full md:bottom-0 md:left-0 md:right-0 z-30 bg-white border-r border-gray-200 flex flex-col items-center justify-between p-6"
+        class="fixed lg:top-0 lg:left-0 lg:w-[3.5%] z-30 md:w-full md:bottom-0 md:left-0 md:right-0 sm:w-full sm:bottom-0 sm:left-0 sm:right-0  z-30 bg-white border-r border-gray-200 flex flex-col items-center justify-between p-6"
       >
         <!-- Logo và các icon -->
         <div class="flex flex-col items-center space-y-6">
@@ -353,7 +353,7 @@
 
     <!-- header -->
     <header
-      class="fixed lg:top-0 md:bottom-0 lg:bottom-auto lg:left-[3.5%] md:left-0 right-0 z-50 bg-[#fff] border-b border-gray-200 shadow-sm backdrop-blur p-2 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/50"
+      class="fixed lg:top-0 md:bottom-0 sm:bottom-0 lg:bottom-auto lg:left-[3.5%] md:left-0 right-0 z-50 bg-[#fff] border-b border-gray-200 shadow-sm backdrop-blur p-2 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/50"
     >
       <div class="px-6">
         <div
@@ -362,9 +362,9 @@
           <div class="flex justify-center items-center gap-10">
             <h1
               id="ledTitle"
-              class="text-2xl font-semibold tracking-widest text-logo lg:block md:hidden"
+              class="text-2xl font-semibold tracking-widest text-logo lg:block md:hidden sm:hidden"
             ></h1>
-            <div class="md:block lg:hidden">
+            <div class="md:block sm:block lg:hidden">
               <div
                 class="contact-icons w-[3.5rem] h-[3.5rem] bg-[color:#392d27] text-white flex items-center justify-center rounded-full font-bold text-logo"
               >
@@ -372,7 +372,7 @@
               </div>
             </div>
             <div class="search-container">
-              <div class="md:hidden lg:block">
+              <div class="md:hidden sm:hidden lg:block">
                 <div
                   class="input-wrapper flex items-center gap-1 border border-gray-300 rounded-full px-4 py-2 bg-white shadow-sm hover:shadow-md transition-all duration-200 w-64"
                 >
