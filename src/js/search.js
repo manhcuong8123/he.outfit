@@ -2,7 +2,6 @@
 const raw = localStorage.getItem('items');
 let items = raw ? JSON.parse(raw) : [];
 
-// Fallback demo nếu mở thẳng trang lần đầu
 if (!Array.isArray(items) || !items.length) {
   items = Array.from({length:12}).map((_,i)=>({
     stt:i+1,
