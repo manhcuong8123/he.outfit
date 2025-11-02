@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dle5zsta0/image/upload/v1762071941/logo_web_hxtmfa.png" />
+
     <link
       href="https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css"
       rel="stylesheet"
@@ -23,9 +25,13 @@
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Sidebar cố định bên trái -->
-    <div class="md:hidden lg:block">
+    <div class="hidden lg:block">
       <aside
-        class="fixed lg:top-0 lg:left-0 lg:w-[3.5%] z-30 md:w-full md:bottom-0 md:left-0 md:right-0 sm:w-full sm:bottom-0 sm:left-0 sm:right-0 z-30 bg-white border-r border-gray-200 flex flex-col items-center justify-between p-6"
+        class="fixed
+        sm:w-full sm:bottom-0 sm:left-0 sm:right-0
+        md:w-full md:bottom-0 md:left-0 md:right-0
+        lg:top-0 lg:left-0 lg:w-[3.5%]  
+         z-30 bg-white border-r border-gray-200 flex flex-col items-center justify-between p-6"
       >
         <!-- Logo và các icon -->
         <div class="flex flex-col items-center space-y-6">
@@ -353,16 +359,16 @@
 
     <!-- header -->
     <header
-      class="fixed lg:top-0 md:bottom-0 sm:bottom-0 lg:bottom-auto lg:left-[3.5%] md:left-0 right-0 z-50 bg-[#fff] border-b border-gray-200 shadow-sm backdrop-blur p-2 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/50"
+      class="fixed left-0 right-0 bottom-0 lg:top-0  lg:bottom-auto lg:left-[3.5%] z-50 bg-[#fff] border-b border-gray-200 shadow-sm backdrop-blur p-2 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/50"
     >
       <div class="px-6">
         <div
-          class="flex lg:justify-between md:justify-center md:gap-10 items-center h-16"
+          class="flex lg:justify-between justify-center gap-10 lg:gap-auto items-center h-16"
         >
           <div class="flex justify-center items-center gap-10">
             <h1
               id="ledTitle"
-              class="text-2xl font-semibold tracking-widest text-logo lg:block md:hidden sm:hidden"
+              class="text-2xl font-semibold tracking-widest text-logo lg:block hidden"
             ></h1>
             <div class="md:block sm:block lg:hidden">
               <div
@@ -372,7 +378,7 @@
               </div>
             </div>
             <div class="search-container">
-              <div class="md:hidden sm:hidden lg:block">
+              <div class="hidden lg:block">
                 <div
                   class="input-wrapper flex items-center gap-1 border border-gray-300 rounded-full px-4 py-2 bg-white shadow-sm hover:shadow-md transition-all duration-200 w-64"
                 >
@@ -558,9 +564,9 @@
 <!-- Màn hình loading -->
 <div
   id="loadingScreen"
-  class="fixed inset-0 flex flex-col items-center justify-center bg-white z-[9999]"
+  class="fixed inset-0 flex flex-col items-center justify-center bg-backdrop-blur p-2 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/90 z-[9999]"
 >
-  <div class="w-10 h-10 border-4 border-gray-300 border-t-[#392d27] rounded-full animate-spin mb-4"></div>
+  <div class="w-[50px] h-[50px] border-4 border-gray-300 border-t-[#392d27] rounded-full animate-spin mb-4"></div>
   <p class="text-[#392d27] font-medium text-lg animate-pulse">
     Đang chuẩn bị những outfit phù hợp nhất cho anh em...
   </p>
