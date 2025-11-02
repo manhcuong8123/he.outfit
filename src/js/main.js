@@ -444,3 +444,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }`;
   document.head.appendChild(style);
 });
+ window.addEventListener("load", () => {
+    const loader = document.getElementById("loadingScreen");
+    loader.classList.add("opacity-0", "pointer-events-none", "transition-opacity", "duration-700");
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 700);
+  });
