@@ -10,6 +10,7 @@ const items = [
       pants: "https://example.com/pants1",
       shoes: "https://example.com/shoes1",
       bag: "https://example.com/bag1",
+      source: "https://example.com/source1",
     },
   },
   {
@@ -23,6 +24,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag2",
+      source: "https://example.com/source2",
     },
   },
   {
@@ -36,6 +38,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag3",
+      source: "https://example.com/source3",
     },
   },
   {
@@ -49,6 +52,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag4",
+      source: "https://example.com/source4",
     },
   },
   {
@@ -62,6 +66,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag5",
+      source: "https://example.com/source5",
     },
   },
   {
@@ -75,6 +80,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag6",
+      source: "https://example.com/source6",
     },
   },
   {
@@ -88,6 +94,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag7",
+      source: "https://example.com/source7",
     },
   },
   {
@@ -101,6 +108,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag8",
+      source: "https://example.com/source8",
     },
   },
   {
@@ -114,6 +122,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag9",
+      source: "https://example.com/source9",
     },
   },
   {
@@ -127,6 +136,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag10",
+      source: "https://example.com/source10",
     },
   },
   {
@@ -141,6 +151,7 @@ const items = [
       shoes: "https://example.com/shoes2",
 
       bag: "https://example.com/bag11",
+      source: "https://example.com/source11",
     },
   },
 
@@ -155,6 +166,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag12",
+      source: "https://example.com/source12",
     },
   },
   {
@@ -200,28 +212,28 @@ const items = [
       source: "https://example.com/source15",
     },
   },
-   {
-      stt: 16,
-      mainImage:
-        "https://base44.app/api/apps/68c5a3b5fcb430d98f9a27f0/files/public/68c5a3b5fcb430d98f9a27f0/1025307bb_SnapVideoapp_556889530_18147323371411806_145170059006787380_n.jpg",
-      image2: "https://picsum.photos/500/700?random=4",
-      image3: "https://picsum.photos/500/700?random=5",
-      links: {
-        shirt: "https://example.com/shirt2",
-        pants: "https://example.com/pants2",
-        shoes: "https://example.com/shoes2",
-        bag: "https://example.com/bag16",
-        source: "https://example.com/source16",
-      },
-      title: "Outfit #16", 
-      tags: {
-        colors: ["black", "blue"], // màu sắc của sản phẩm
-        season: ["summer"], // mùa của sản phẩm
-        vibe: ["minimal"], // phong cách của sản phẩm
-        formality: "casual", // mức độ trang trọng
-        fit: "regular", // kiểu dáng
-      },
+  {
+    stt: 16,
+    mainImage:
+      "https://base44.app/api/apps/68c5a3b5fcb430d98f9a27f0/files/public/68c5a3b5fcb430d98f9a27f0/1025307bb_SnapVideoapp_556889530_18147323371411806_145170059006787380_n.jpg",
+    image2: "https://picsum.photos/500/700?random=4",
+    image3: "https://picsum.photos/500/700?random=5",
+    links: {
+      shirt: "https://example.com/shirt2",
+      pants: "https://example.com/pants2",
+      shoes: "https://example.com/shoes2",
+      bag: "https://example.com/bag16",
+      source: "https://example.com/source16",
     },
+    title: "Outfit #16",
+    tags: {
+      colors: ["black", "blue"], // màu sắc của sản phẩm
+      season: ["summer"], // mùa của sản phẩm
+      vibe: ["minimal"], // phong cách của sản phẩm
+      formality: "casual", // mức độ trang trọng
+      fit: "regular", // kiểu dáng
+    },
+  },
 
   {
     stt: 17,
@@ -276,6 +288,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag20",
+      source: "https://example.com/source20",
     },
   },
   {
@@ -289,6 +302,7 @@ const items = [
       pants: "https://example.com/pants2",
       shoes: "https://example.com/shoes2",
       bag: "https://example.com/bag21",
+      source: "https://example.com/source21",
     },
   },
 ];
