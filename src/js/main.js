@@ -2,9 +2,9 @@ const items = [
   {
     stt: 1,
     mainImage:
-      "https://res.cloudinary.com/dle5zsta0/image/upload/v1761922342/a9d0d0fc7_0ed1ce8409624a9dabbef47c0e061709tplv-photomode-image_rthvw1.jpg",
-    image2: "https://picsum.photos/500/700?random=2",
-    image3: "https://picsum.photos/500/700?random=3",
+      "https://res.cloudinary.com/dle5zsta0/image/upload/v1762794933/557643998_772260642472669_5062706827079119434_n_naw67j.jpg",
+    image2: "https://res.cloudinary.com/dle5zsta0/image/upload/v1762794875/578277035_772260665806000_4492136334347012942_n_ka7v5u.jpg",
+    image3: "https://res.cloudinary.com/dle5zsta0/image/upload/v1762795063/577004102_772260645806002_272312615117709790_n_pl9mxg.jpg",
     links: {
       shirt: "https://s.shopee.vn/4q7iNoh6Qy",
       pants: "https://s.shopee.vn/7plJzIHK6D",
