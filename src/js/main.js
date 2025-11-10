@@ -6,11 +6,11 @@ const items = [
     image2: "https://picsum.photos/500/700?random=2",
     image3: "https://picsum.photos/500/700?random=3",
     links: {
-      shirt: "https://example.com/shirt1",
-      pants: "https://example.com/pants1",
-      shoes: "https://example.com/shoes1",
-      bag: "https://example.com/bag1",
-      source: "https://example.com/source1",
+      shirt: "https://s.shopee.vn/4q7iNoh6Qy",
+      pants: "https://s.shopee.vn/7plJzIHK6D",
+      shoes: "https://s.shopee.vn/4LBRpbLHHR",
+      bag: "https://s.shopee.vn/7Kp3OaRNg6",
+      source: "https://www.instagram.com/dvthng/",
     },
   },
   {
