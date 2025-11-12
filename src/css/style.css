@@ -1,7 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+::selection {
+  background-color: #fae7c9;
+  color: #7a5c4d;
+}
 /* Cấu hình cho sidebar */
 .sidebar {
   position: fixed;
