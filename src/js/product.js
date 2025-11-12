@@ -69,7 +69,21 @@ document.addEventListener("DOMContentLoaded", () => {
     hero.src = product.mainImage;
     hero.alt = `Outfit #${product.stt}`;
   }
-
+  const image2 = document.getElementById("image2");
+  if (image2) {
+    image2.src = product.mainImage;
+    image2.alt = `Outfit #${product.stt}`;
+  }
+    const image3 = document.getElementById("image3");
+  if (image3) {
+    image3.src = product.mainImage;
+    image3.alt = `Outfit #${product.stt}`;
+  }
+    const image4 = document.getElementById("image4");
+  if (image4) {
+    image4.src = product.mainImage;
+    image4.alt = `Outfit #${product.stt}`;
+  }
   const sourceLink = document.getElementById("sourceLink");
   if (sourceLink) {
     if (product.links?.source) {
