@@ -3,8 +3,10 @@ const items = [
     stt: 1,
     mainImage:
       "https://res.cloudinary.com/dle5zsta0/image/upload/v1762794933/557643998_772260642472669_5062706827079119434_n_naw67j.jpg",
-    image2: "https://res.cloudinary.com/dle5zsta0/image/upload/v1762794875/578277035_772260665806000_4492136334347012942_n_ka7v5u.jpg",
-    image3: "https://res.cloudinary.com/dle5zsta0/image/upload/v1762795063/577004102_772260645806002_272312615117709790_n_pl9mxg.jpg",
+    image2:
+      "https://res.cloudinary.com/dle5zsta0/image/upload/v1762794875/578277035_772260665806000_4492136334347012942_n_ka7v5u.jpg",
+    image3:
+      "https://res.cloudinary.com/dle5zsta0/image/upload/v1762795063/577004102_772260645806002_272312615117709790_n_pl9mxg.jpg",
     links: {
       shirt: "https://s.shopee.vn/4q7iNoh6Qy",
       pants: "https://s.shopee.vn/7plJzIHK6D",
@@ -341,13 +343,16 @@ function shuffleArray(arr) {
 
 function renderFeatured(firstN) {
   const cells = featuredGrid.querySelectorAll(".cell");
-  cells.forEach((cell, i) => {
-    cell.innerHTML = "";
-    if (!firstN[i]) return;
-    const card = createCard(firstN[i]);
-    card.classList.add("h-full"); // card fill cell
-    cell.appendChild(card);
-  });
+  const elements = document.querySelectorAll(".some-class");
+  if (elements) {
+    cells.forEach((cell, i) => {
+      cell.innerHTML = "";
+      if (!firstN[i]) return;
+      const card = createCard(firstN[i]);
+      card.classList.add("h-full"); // card fill cell
+      cell.appendChild(card);
+    });
+  }
 }
 
 function renderMasonry(rest) {
@@ -434,6 +439,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cursor = document.createElement("span");
   cursor.textContent = "█";
   cursor.style.marginLeft = "4px";
+  cursor.style.color = "#392d27";
   cursor.style.animation = "blink 0.8s infinite";
   title.appendChild(cursor);
 
@@ -444,11 +450,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }`;
   document.head.appendChild(style);
 });
- window.addEventListener("load", () => {
-    const loader = document.getElementById("loadingScreen");
-    loader.classList.add("opacity-0", "pointer-events-none", "transition-opacity", "duration-700");
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loadingScreen");
+  loader.classList.add(
+    "opacity-0",
+    "pointer-events-none",
+    "transition-opacity",
+    "duration-700"
+  );
 
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 700);
-  });
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 700);
+});
