@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "destination": "/feed",
+      "source": "/feed",
+      "destination": "/feed.html",
       "permanent": false
     }
   ]
