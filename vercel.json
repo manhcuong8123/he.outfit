@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/feed.html",
-      "permanent": false
-    }
-  ]
-}
