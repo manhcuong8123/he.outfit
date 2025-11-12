@@ -31,7 +31,8 @@
         sm:w-full sm:bottom-0 sm:left-0 sm:right-0
         md:w-full md:bottom-0 md:left-0 md:right-0
         lg:top-0 lg:left-0 lg:w-[3.5%]  
-         z-30 bg-white border-r border-gray-200 flex flex-col items-center justify-between p-6"
+        shadow-lg backdrop-blur bg-[#fae7c9]/80 backdrop-blur supports-[backdrop-filter]:bg-[#fae7c9]/30
+         z-30 border-r  flex flex-col items-center justify-between p-6"
       >
         <!-- Logo và các icon -->
         <div class="flex flex-col items-center space-y-6">
@@ -52,7 +53,7 @@
           </a>
           <a
             href="search.html"
-            class="p-2 rounded-full hover:bg-[rgb(250,231,201)] hover:bg-opacity-50"
+            class="p-2 rounded-full hover:bg-[rgb(250,231,201)] hover:bg-opacity-50 duration-300 transition-all"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -380,7 +381,7 @@
             <div class="search-container">
               <div class="hidden lg:block">
                 <div
-                  class="input-wrapper flex items-center gap-1 border border-gray-300 rounded-full px-4 py-2 bg-white shadow-sm hover:shadow-md transition-all duration-200 w-64"
+                  class="input-wrapper flex items-center gap-1 border border-[#7a5c4d] rounded-full px-4 py-2 bg-white shadow-sm hover:shadow-md transition-all duration-200 w-64"
                 >
                   <i
                     class="fa-brands fa-searchengin"
@@ -425,7 +426,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-5 h-5 text-gray-700"
+                class="w-5 h-5 text-[#7a5c4d]"
               >
                 <path
                   fill-rule="evenodd"
@@ -444,7 +445,7 @@
     <main class="lg:ml-20 md:ml-[0] lg:pt-24 md:pt-5 p-6">
       <div
         id="featuredGrid"
-        class="grid lg:grid-cols-6 grid-cols-2 lg:grid-rows-7 sm:grid-rows-1 md:grid-cols-2 gap-4 mx-auto max-w-screen-xl mb-8"
+        class="grid lg:grid-cols-6 grid-cols-2 lg:grid-rows-9 sm:grid-rows-1 md:grid-cols-2 gap-4 mx-auto max-w-screen-xl mb-8"
       >
         <div class="cell lg:row-span-3"></div>
         <!-- 1 -->
@@ -477,7 +478,7 @@
 
       <div
         id="imageGrid"
-        class="grid grid-cols-1 grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-xl"
+        class="grid grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-xl"
       ></div>
     </main>
     <!-- Popup thông báo -->
